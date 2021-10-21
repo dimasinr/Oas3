@@ -1,0 +1,21 @@
+openapi: '3.0.2'
+info:
+  title: Swagger API Quasar
+  version: '1.0'
+servers:
+  - url: http://192.168.4.74:2000
+paths:
+  /nginx-api.php:
+    get:
+      tags:
+        - nginx
+      responses:
+        '200':
+          description: OK
+  /uwsgi-api.php:
+    get:
+      tags:
+        - uwsgi
+      responses:
+        '200':
+          description: OK
